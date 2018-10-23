@@ -1,6 +1,11 @@
-/*id选择器优先级高，或者用！important*/
-body{
-	background-color: #e5e5e5;
+.box{
+	width: 1230px;
+	margin:0 auto;
+	position: relative;
+	height: 4235px;
+	margin-bottom: 100px;
+	background:url(../images/index.jpg);
+	background-size: 1230px 4235px;
 }
 .link{
 	text-decoration: none !important;
@@ -8,88 +13,198 @@ body{
 .link:hover{
 	color: #f65a8a !important;
 }
+.active{
+	border-bottom: 2px solid #fffe9d;
+}
+.navbar-header .navbar-brand .logo{
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: -0.1rem;
+	display: inline-block;
+}
+.navbar-header .navbar-brand span{
+	margin-left: 0.1rem;
+	font-size:0.2rem;
+}
 #xx-navbar .active a{
 	color: #f65a8a;
 	background:transparent;
 }
-#xx-navbar .navbar-brand{
-	color: #333;
+.navbar-default a{
+	color: #fff !important;
+}
+.navbar-default{
+	background-color: #3070c7;
+	height: 80px;
+	border:none;
+}
+.navbar-nav{
+	float: right;
+}
+#xx-navbar .navbar-nav li{
+	text-align:center;
 }
 #xx-navbar .navbar-nav a{
-	font-size: 15px;
+	font-size: 0.1rem;
+}
+.container{
+	margin-top: 13px;
+}
+.entry{
+	display: block;
+	position: absolute;
+	top: 509px;
+	left: 155px;
+	background-color: #1e58a6;
+	font-size: 0.1rem;
+	width: 200px;
+	height:50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	border-radius: 10px;
+}
+.plus1{
+	font-size: 0.1rem;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 1249px;
+	margin-left: -9px;
+}
+.plus2{
+	font-size: 20px;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 964px;
+	margin-left: -14px;
+}
+.tab{
+	width: 100%;
+	min-height: 100px;
+	position: absolute;
+	top:1697px;
+	left: 0px;
+	padding: 0 164px;
+}
+.more{
+	width: 120px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	display: inline-block;
+	background-color: #1e58a6;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 0.1rem;
+	position: absolute;
+	left: 50%;
+	top:0px;
+	margin-left: -60px;
+}
+.tab .item{
+	margin-top: 100px;
+	width: 350px;
+	height: 180px;
+	background-color: #fff;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.6);
+	float: left;
+	margin-right: 30px;
+}
+.tab .item:hover{
+	cursor: pointer;
+}
+.tab .item .left{
+	float: left;
+	margin-left: 20px;
+	box-shadow: 10px;
+	margin-top: -50px;
+}
+.tab .item .left img{
+	width: 140px;
+	height: 200px;
+}
+.tab .item .right{
+	float: left;
+	margin-top: 20px;
 	margin-left: 20px;
 }
-#xx-navbar .navbar-nav a:hover{
-	color: #f65a8a;
+.tab .item .right p:nth-child(1){
+	font-size: 0.1rem;
 }
-/*#main-carousel{
-	margin-bottom: 20px;
+.tab .item .right p:nth-child(2){
+	font-size: 0.08rem;
+	color: #999;
+}
+.tab .item .right p:nth-child(3){
+	font-size: 0.05rem;
+	color: #999;
+}
+.caroueslBox{
+	width: 100%;
+	min-height: 100px;
+	position: absolute;
+	top:2403px;
+	left: 0px;
 }
 #main-carousel .carousel-inner img{
 	width: 100%;
-	height: 420px;
-}*/
-.ad .thumbnail{
-	border: none;
-	height: 200px;
-	padding: 0;
-	transition: all 0.5s;
+	height: 318px;
 }
-.ad .thumbnail img{
-	width: 100%;
-	height: 100%;
+.carousel-indicators .active{
+	background-color: #000;
 }
-.ad .thumbnail:hover{
-	box-shadow: 0 5px 5px rgba(0,0,0,0.2)
+#main-carousel .carousel-indicators li{
+	border-color: #000;
 }
-#xx-panel .panel-heading{
-	border: none;
-	background-color: transparent;
-	padding-left: 0;
-}
-#xx-panel .panel-title{
-	border-left: 2px solid #f65a8a;
-	padding-left: 15px;
-}
-#xx-panel:hover .panel-heading{
-	color: #f65a8a;
-}
-#xx-panel .panel-footer .panel-footer-text{
-	margin-right: 10px;
-}
-#xx-page .pagination>li>a:hover{
-	background: #fff;
-	color: #f65a8a;
-}
-#xx-me .panel-heading{
-	border: none;
-	background-color: transparent;
-}
-#xx-me .panel-body{
-	
-	background-color:#f7f7f7;
-}
-#xx-me .about-me-img{
-	width: 50px;
-	height: 60px;
-	border-radius: 50%;
-}
-#xx-rank .panel-heading{
-	border: none;
-	background-color: transparent;
-}
-#xx-rank .panel-body a{
-	display: block;
-	padding: 15px 0;
+#main-carousel .carousel-control{
 	color: #000;
 }
-#xx-rank .panel-body{
-	background-color:#f7f7f7;
+.footer{
+	width: 100%;
+	min-height: 100px;
+	position: absolute;
+	bottom: 279px;
 }
-#xx-followme .panel-heading{
-	border: none;
-	background-color: transparent;
+.footer .content{
+	position: absolute;
+	/*top:2403px;*/
+	bottom: 0px;
+	left: 42%;
 }
-#xx-followme .panel-body{
-	background-color:#f7f7f7;
+.footer .form{
+	position: absolute;
+	right: 0px;
+}
+.form-name{
+	position: relative;
+	left: -44%;
+	top: 38px;
+}
+.form-phone{
+	position: relative;
+	left: -95%;
+	top: 78px;
+}
+.end{
+	width: 100%;
+	min-height: 100px;
+	position: absolute;
+	bottom: 0px;
+
+}
+.end ul{
+	position: absolute;
+	left: 34%;
+	top:-38px;
+}
+.end ul li{
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+}
+.end li a{
+	font-size: 0.1rem;
+	color: #666;
 }
